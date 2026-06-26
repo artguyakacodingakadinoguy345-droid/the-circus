@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circus Game - Cain's Conjured Realm</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container"></div>
+    <div id="ui-container">
+        <div id="dialogue-box" class="dialogue-box hidden">
+            <div id="dialogue-text" class="dialogue-text"></div>
+            <div id="input-area" class="input-area hidden">
+                <input type="text" id="player-input" placeholder="Speak with Cain...">
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+        <div id="game-hud" class="game-hud">
+            <div id="player-status" class="status-panel">
+                <p>Player 1: Normal</p>
+                <p id="insanity-indicator" class="insanity-off">Sanity: Stable</p>
+            </div>
+            <div id="game-info" class="info-panel">
+                <p id="location-info">Circus Entrance</p>
+                <p id="adventure-info">Awaiting Cain's guidance...</p>
+            </div>
+        </div>
+        <div id="controls-hint" class="controls-hint">
+            <p>WASD: Move | SPACE: Jump | T: Talk | E: Build | B: Furniture</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/game/World.js"></script>
+    <script src="js/game/Player.js"></script>
+    <script src="js/game/Room.js"></script>
+    <script src="js/game/BuildingSystem.js"></script>
+    <script src="js/game/FurnitureSystem.js"></script>
+    <script src="js/game/AdventureGenerator.js"></script>
+    <script src="js/game/PuzzleGenerator.js"></script>
+    <script src="js/game/NPCSystem.js"></script>
+    <script src="js/game/GameEngine.js"></script>
+    <script src="js/ai/Cain.js"></script>
+    <script src="js/ai/DialogueSystem.js"></script>
+    <script src="js/effects/InsanityEffects.js"></script>
+    <script src="js/audio/AudioManager.js"></script>
+    <script src="js/multiplayer/MultiplayerSystem.js"></script>
+    <script src="js/systems/AchievementSystem.js"></script>
+    <script src="js/ui/GameUI.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
